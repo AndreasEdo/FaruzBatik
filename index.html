@@ -80,7 +80,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(135deg, rgba(212, 165, 116, 0.8), rgba(139, 69, 19, 0.8)),
-                        url('image/hero-bg.png');
+                        url('images/hero-bg.png');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -694,69 +694,57 @@
             
             <div class="carousel-container">
                 <div class="carousel" id="productCarousel">
-                    <div class="product-card">
-                        <img class="achievement-image achievement-img-1" src="image/left-achievement.png" ></img>
-                        <div class="product-info">
-                            <h3 class="product-title">Batik Coban Sewu</h3>
-                            <p class="product-description">Traditional batik with intricate waterfall patterns, hand-drawn using traditional tulis technique.</p>
-                        </div>
-                    </div>
+                    
                     
                     <div class="product-card">
-                        <div class="product-image"></div>
+                        <img class="product-image" src = "images/product2.jpg"> </img>
                         <div class="product-info">
-                            <h3 class="product-title">Batik Parang Royal</h3>
+                            <h3 class="product-title">Batik Coban Sewu</h3>
                             <p class="product-description">Classic royal pattern with modern twist, perfect for formal occasions and cultural events.</p>
                         </div>
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image"></div>
+                        <img class="product-image" src = "images/product3.jpg"> </img>
                         <div class="product-info">
-                            <h3 class="product-title">Batik Kawung Heritage</h3>
+                            <h3 class="product-title">Batik Gunungan</h3>
                             <p class="product-description">Geometric kawung motif representing perfection and eternal life, crafted with premium materials.</p>
                         </div>
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image"></div>
+                        <img class="product-image" src = "images/product4.jpg"> </img>
                         <div class="product-info">
-                            <h3 class="product-title">Batik Megamendung</h3>
+                            <h3 class="product-title">Eco Print</h3>
                             <p class="product-description">Cloud-inspired patterns in vibrant colors, symbolizing calmness and serenity.</p>
                         </div>
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image"></div>
+                        <img class="product-image" src = "images/product5.jpg"> </img>
                         <div class="product-info">
-                            <h3 class="product-title">Batik Truntum Elite</h3>
+                            <h3 class="product-title">Batik Pewarna Alam</h3>
                             <p class="product-description">Symbol of blooming love and guidance, perfect for wedding ceremonies and special occasions.</p>
                         </div>
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image"></div>
+                        <img class="product-image" src = "images/product6.jpg"> </img>
                         <div class="product-info">
-                            <h3 class="product-title">Batik Sogan Modern</h3>
+                            <h3 class="product-title">Batik Motif Bambu</h3>
                             <p class="product-description">Contemporary interpretation of traditional sogan colors with modern geometric patterns.</p>
                         </div>
                     </div>
                     
                     <div class="product-card">
-                        <div class="product-image"></div>
+                        <img class="product-image" src = "images/product7.jpg"> </img>
                         <div class="product-info">
-                            <h3 class="product-title">Batik Lereng Premium</h3>
+                            <h3 class="product-title">Batik Junjung Derajat</h3>
                             <p class="product-description">Elegant diagonal patterns representing strength and resilience, handcrafted by master artisans.</p>
                         </div>
                     </div>
                     
-                    <div class="product-card">
-                        <div class="product-image"></div>
-                        <div class="product-info">
-                            <h3 class="product-title">Batik Nitik Luxury</h3>
-                            <p class="product-description">Fine dot patterns creating stunning visual textures, the pinnacle of batik craftsmanship.</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             
@@ -795,13 +783,13 @@
         
         <div class="achievement-grid">
             <div class="achievement-item">
-                <img class="achievement-image achievement-img-1" src="image/left-achievement.png" ></img>
+                <img class="achievement-image achievement-img-1" src="images/left-achievement.png" ></img>
             </div>
             <div class="achievement-item">
-                <img class="achievement-image achievement-img-2" src="image/middle-achievement.png"></img>
+                <img class="achievement-image achievement-img-2" src="images/middle-achievement.png"></img>
             </div>
             <div class="achievement-item">
-                <img class="achievement-image achievement-img-3" src="image/right-achievement.png"></img>
+                <img class="achievement-image achievement-img-3" src="images/right-achievement.png"></img>
             </div>
         </div>
     </section>
@@ -924,7 +912,8 @@
         }, observerOptions);
 
         // Observe elements for animation
-        document.querySelectorAll('.product-card, .feature-card, .testimonial-card').forEach(el => {
+        document.querySelectorAll('.product-card, .feature-card, .testimonial-card, .achievement-item').forEach(el => {
+
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'all 0.6s ease';
