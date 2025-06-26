@@ -80,7 +80,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(135deg, rgba(212, 165, 116, 0.8), rgba(139, 69, 19, 0.8)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23D4A574" width="1200" height="800"/><path fill="%23B8956A" d="M0 400L50 380C100 360 200 320 300 300C400 280 500 280 600 300C700 320 800 360 900 380C1000 400 1100 400 1150 400L1200 400V800H1150C1100 800 1000 800 900 800C800 800 700 800 600 800C500 800 400 800 300 800C200 800 100 800 50 800H0V400Z"/></svg>');
+                        url('image/hero-bg.png');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -190,6 +190,10 @@
             font-size: 2.5rem;
             color: #8B4513;
             position: relative;
+        }
+
+        .section-title-font-dark{
+            color:  #D4A574
         }
 
         .section-title::after {
@@ -665,9 +669,9 @@
             <ul class="nav-links">
                 <li><a href="#products">Products</a></li>
                 <li><a href="#why-us">Why Us?</a></li>
-                <li><a href="#achievements">Achievement</a></li>
+                <li><a href="#achievement">Achievement</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#partner">Partner</a></li>
+                <li><a href="#contacts">Partner</a></li>
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div>
@@ -774,7 +778,7 @@
     <!-- Why Choose Us Section -->
     <section id="why-us" class="why-us">
         <div class="container">
-            <h2 class="section-title">Why you need to pick us?</h2>
+            <h2 class="section-title-font-dark section-title">Why you need to pick us?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
@@ -792,20 +796,20 @@
     </section>
 
 
-        <!-- Achievement Section -->
+    <!-- Achievement Section -->
     <section id="achievement" class="achievement">
-        <h2>Our Achievement</h2>
+        <h2 class="section-title">Our Achievement</h2>
         <p class="achievement-subtitle">Achieved consistent growth through the production of authentic handcrafted batik, combining traditional techniques with modern creativity.</p>
         
         <div class="achievement-grid">
             <div class="achievement-item">
-                <div class="achievement-image achievement-img-1"></div>
+                <img class="achievement-image achievement-img-1" src="image/left-achievement.png" ></img>
             </div>
             <div class="achievement-item">
-                <div class="achievement-image achievement-img-2"></div>
+                <img class="achievement-image achievement-img-2" src="image/middle-achievement.png"></img>
             </div>
             <div class="achievement-item">
-                <div class="achievement-image achievement-img-3"></div>
+                <img class="achievement-image achievement-img-3" src="image/right-achievement.png"></img>
             </div>
         </div>
     </section>
@@ -817,19 +821,19 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">Motif batiknya bagus anak muda banget, kainnya juga adem banget dan jatuh batiknya</p>
-                    <p class="testimonial-author">- Reniz Indira, Local Buyer</p>
+                    <p class="testimonial-text">Motif batiknya bagus anak muda banget, kainnya juga adem, lentur, dan jatuh bahannya</p>
+                    <p class="testimonial-author">- Reniz Indira, Local Guide</p>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">Batiknya bagus... katanya juga tembel</p>
-                    <p class="testimonial-author">- Nungky Cazcha, Local Merchant</p>
+                    <p class="testimonial-text">Batiknya bagus... kainnya lembut</p>
+                    <p class="testimonial-author">- Nungky Cazcha, Local Guide</p>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">Batik tulis terberen</p>
+                    <p class="testimonial-text">Batik tulis terkeren</p>
                     <p class="testimonial-author">- Fitrianing Astutik</p>
                 </div>
             </div>
@@ -859,7 +863,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>© 2025 Faruz Batik & Collection. All rights reserved. | Design by Claude</p>
+            <p>© 2025 Faruz Batik & Collection. All rights reserved.</p>
         </div>
     </footer>
 
